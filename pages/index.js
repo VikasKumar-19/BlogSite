@@ -1,71 +1,50 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Script from 'next/script'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+
+import Script from "next/script";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Hunting Coder by Hunting Coder</title>
-        <meta name="description" content="A blog site for hunting solutions" />
+        <title>Dive deep into the World of Development</title>
+        <meta name="description" content="Web development tricks, tips, tutorials, projects and much more" />
         <link rel="icon" href="/favicon.ico" />
+      {/* <Script src="/demo.js" strategy="lazyOnload"></Script> */}
       </Head>
-      <Script src='/demo.js' strategy='lazyOnload'></Script>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Hunter Coder by Hunter Coder
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+      <main className="w-3/4 mx-auto text-center px-8 mt-20" >
+        <h1 className="font-semibold text-4xl">Development Made Easy</h1>
+        <p className="text-3xl py-8">
+          Learn and Explore the Web Development like Never Before.
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="max-w-[520px]  mx-auto text-left">
+          <h2 className="font-bold text-xl py-2">Popular Blogs</h2>
+          <div className="flex flex-col gap-4">
+            <a href="https://nextjs.org/docs" >
+              <h3 className="font-medium text-lg">How to learn javascript in 2022 &rarr;</h3>
+              <p className="text-[16px]">javascript is a language used to design language for the web</p>
+            </a>
+            <a href="https://nextjs.org/docs" >
+              <h3 className="font-medium text-lg">How to learn javascript in 2022 &rarr;</h3>
+              <p className="text-[16px]">javascript is a language used to design language for the web</p>
+            </a>
+            <a href="https://nextjs.org/docs" >
+              <h3 className="font-medium text-lg">How to learn javascript in 2022 &rarr;</h3>
+              <p className="text-[16px]">javascript is a language used to design language for the web</p>
+            </a>
+            <a href="https://nextjs.org/docs" >
+              <h3 className="font-medium text-lg">How to learn javascript in 2022 &rarr;</h3>
+              <p className="text-[16px]">javascript is a language used to design language for the web</p>
+            </a>
+          </div>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer>
+
       </footer>
     </div>
-  )
+  );
 }
