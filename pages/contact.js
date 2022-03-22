@@ -19,7 +19,7 @@ const ContactPage = () => {
           <input id='mobileNoInp' placeholder='Enter your phone no'/>
         </div>
         <div>
-          <label htmlFor="descInp"></label>
+          <label htmlFor="descInp">Description</label><br />
           <textarea id="descInp" placeholder='Enter your query.' />
         </div>
       </form> 
